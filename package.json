@@ -5,11 +5,16 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "node Pokemon.ts"
+    "dev": "node Pokemon.ts",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "coverage": "vitest run --coverage"
   },
-  "dependencies": {},
   "devDependencies": {
-    "typescript": "^6.0.3"
+    "@vitest/ui": "^5.0.4",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.4"
   },
   "private": true
 }
