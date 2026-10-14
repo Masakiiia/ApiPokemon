@@ -5,16 +5,22 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "node Pokemon.ts",
+    "dev": "tsx src/server.ts",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
     "coverage": "vitest run --coverage"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.5",
+    "@vitest/coverage-v8": "^5.0.4",
     "@vitest/ui": "^5.0.4",
     "typescript": "^6.0.3",
     "vitest": "^5.0.4"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "tsx": "^4.23.15"
+  }
 }
